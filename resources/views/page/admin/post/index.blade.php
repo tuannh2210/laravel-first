@@ -34,22 +34,24 @@
 					<tr role="row">
 						<th> # </th>
 						{{-- <th> Ảnh </th> --}}
-						<th with="200px" > Tiêu đề </th>
 						<th>Danh mục </th>
+						<th with="200px" > Tiêu đề </th>
 						<th width="250px" > Tóm tắt </th>
 						<th width="400px" > Nội dung chính </th>
 						<th > Người tạo </th>
-						<th ><a href="{{route('post.add')}} " class="btn btn-info">
-							Thêm danh mục
-						</a>  </th>
+						<th>
+							<a href="{{route('post.add')}} " class="btn btn-info">
+								Thêm bài viết
+							</a>  
+						</th>
 					</tr>
 				</thead>
 				<tbody>
 					@foreach($posts as $p)
 					@php
-                                $cate = $p->getCate();
-                                $cateSlug = $cate->slug.'/'.$p->slug;
-                           @endphp
+                        $cate = $p->getCate();
+                        $cateSlug = $cate->slug.'/'.$p->slug;
+                   	@endphp
 					<tr>
 						<td>{{$p->id}} </td>
 						<td width="120px"> {{$cate->name}}</td>

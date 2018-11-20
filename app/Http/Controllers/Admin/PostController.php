@@ -26,17 +26,17 @@ class PostController extends Controller
 	// 	return view('page.admin.post.index',compact('posts', 'keyword', 'fullUrl', 'pageSize'));
 	// }
 
-	 public function index(request $request){
+	public function index(request $request){
 		$pageItem = $request->pageItem == null ? 10 : $request->pageItem;
 		$fullUrl = $request->fullUrl();
 		$keyword = $request->keyword;
 		$addPath = "";
 		if(!$keyword){
-			$posts = Post::orderBy('id','desc')->paginate($pageItem);
+			$posts = Post::paginate($pageItem);
 			$addPath .= "?pageItem=$pageItem";
 
 		}else{
-			$posts = Post::where('title', 'like', "%$keyword%")->orderBy('id', 'desc')->paginate($pageItem);
+			$posts = Post::where('title', 'like', "%$keyword%")->paginate($pageItem);
 			$addPath .= "?keyword=$keyword&pageItem=$pageItem";
 
 		}
@@ -70,6 +70,7 @@ class PostController extends Controller
 	}
 
 	public function save(Request $request){
+		// dd($request->all());
 		if($request->id){
 			$model = Post::find($request->id);
 			if(!$model) return view('admin.404');

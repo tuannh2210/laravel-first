@@ -9,11 +9,11 @@
 				<div id="pageItem">
 					<form action="" id=filterForm>
 						<select  name="pageItem" class="form-control input-sm input-xsmall input-inline">
-								{{-- @foreach(getPageSizeItem() as $item)
+								@foreach(getPageSizeItem() as $item)
 									<option @if($pageItem == $item) selected @endif value="{{$item}}">
 										{{$item}}
 									</option>	
-								@endforeach --}}
+								@endforeach
 						</select> entries
 					</form>
 				</div>
@@ -38,9 +38,10 @@
 						<th > Danh mục cha </th>
 						<th>Mô tả </th>
 						<th > Hiển thị menu </th>
-						<th ><a href="{{route('cate.add')}} " class="btn btn-info">
-							Thêm danh mục
-						</a>  </th>
+							<th ><a href="{{route('cate.add')}} " class="btn btn-info">
+								Thêm danh mục
+							</a> 
+						 </th>
 					</tr>
 				</thead>
 				<tbody>

@@ -52,7 +52,6 @@ class LoginController extends Controller
     }
 
     public function postLogin(LoginRequest $rq){
-
         if (Auth::attempt(['name' => $rq->name, 'password' => $rq->password],$rq->remember)||
             Auth::attempt(['email' => $rq->name, 'password' => $rq->password],$rq->remember)) {
             return redirect(route('admin'));

@@ -5,34 +5,7 @@
             <div class="top-bar-style-1">
 
                 <div class="td-header-sp-top-menu">
-
-
-                    <div class="menu-top-container">
-                        <ul id="menu-top-menu" class="top-header-menu">
-                            <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-first td-menu-item td-normal-menu menu-item-10">
-                                <a href="https://topdev.vn/">TopDev Jobs</a>
-                            </li>
-                            <li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-11">
-                                <a href="https://techtalk.vn/">TechTalk</a>
-                            </li>
-                            <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-12">
-                                <a href="http://devvui.com/">Devvui</a>
-                            </li>
-                            <li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-13">
-                                <a href="http://mobileday.vn/">MobileDay</a>
-                            </li>
-                            <li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-14">
-                                <a href="https://vietnamwebsummit.com/">VietNam Web Summit</a>
-                            </li>
-                            <li id="menu-item-15" class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-15">
-                                <a href="http://onsite.applancer.net/">TopDev Onsite</a>
-                            </li>
-                            <li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-16">
-                                <a href="https://salary.topdev.vn/">Salary</a>
-                            </li>
-                            
-                        </ul>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -43,7 +16,7 @@
             <div class="td-container td-header-row td-header-main-menu">
                 <div class="td-header-sp-logo">
                     <a class="td-main-logo" href=" {{route('homepage')}}">
-                        {{-- <img class="td-retina-data"  src="{{asset('theme/client/uploads/2017/01/logotopdev.png')}}" alt=""/> --}}
+                        <img class="td-retina-data"  src="{{asset('theme/client/uploads/2017/01/logotopdev.png')}}" alt=""/>
                         {{-- <h3 class="td-visual">TopDev</h3> --}}
                     </a>
                 </div>

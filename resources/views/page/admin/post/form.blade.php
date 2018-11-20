@@ -38,7 +38,6 @@
 						<textarea name="short_dess" id="editor">{{$model->short_dess}}</textarea>
 					</div>
 				</div>
-				
 			</div>
 			<div class="col-md-12">
 				<div class="form-group row">
@@ -62,13 +61,13 @@
 				<div class="form-group row">
 					<label class="col-md-3 control-label text-center ">Người tạo <span class="text-danger">*</span></label>
 					<div class="col-md-9">
-						{{-- <select name="created_by" class="form-control">
+						<select name="cate_id" class="form-control">
 							<option>
-								@foreach($users as $u)
-									<option value="{{$u->id}} ">{{$u->name}}</option>
+								@foreach($cates as $cate)
+									<option value="{{$cate->id}} ">{{$cate->name}}</option>
 								@endforeach	
 							</option>
-						</select> --}}
+						</select>
 						<input type="text" class="form-control" value="{{Auth::user()->name}}" disabled="">
 					</div>
 				</div>
